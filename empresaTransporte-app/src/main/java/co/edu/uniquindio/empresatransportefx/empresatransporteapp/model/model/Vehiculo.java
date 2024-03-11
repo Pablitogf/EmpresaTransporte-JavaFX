@@ -1,6 +1,8 @@
 package co.edu.uniquindio.empresatransportefx.empresatransporteapp.model.model;
 
-public abstract class Vehiculo {
+import co.edu.uniquindio.empresatransportefx.empresatransporteapp.Builder.VehiculoBuilder;
+
+public class Vehiculo {
     private String placa;
     private String modelo;
     private String marca;
@@ -15,36 +17,24 @@ public abstract class Vehiculo {
         this.color = color;
     }
 
-    public String getPlaca() {
-        return placa;
+    public static VehiculoBuilder builder(){
+        return new VehiculoBuilder();
     }
 
-    public void setPlaca(String placa) {
-        this.placa = placa;
+    public String getPlaca() {
+        return placa;
     }
 
     public String getModelo() {
         return modelo;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
     public String getMarca() {
         return marca;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
     public String getColor() {
         return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     @Override

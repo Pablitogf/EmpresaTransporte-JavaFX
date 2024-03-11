@@ -15,10 +15,6 @@ public class VehiculoTransporte extends Vehiculo {
         return NumPasajeros;
     }
 
-    public void setNumPasajeros(int numPasajeros) {
-        NumPasajeros = numPasajeros;
-    }
-
     @Override
     public String toString() {
         return "vehiculoTransporte{" +

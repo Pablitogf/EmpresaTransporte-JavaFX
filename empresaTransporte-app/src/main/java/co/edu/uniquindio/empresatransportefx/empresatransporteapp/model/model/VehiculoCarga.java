@@ -17,16 +17,8 @@ public class VehiculoCarga extends Vehiculo {
         return NumEjes;
     }
 
-    public void setNumEjes(int numEjes) {
-        NumEjes = numEjes;
-    }
-
     public double getCapacidadCarga() {
         return capacidadCarga;
-    }
-
-    public void setCapacidadCarga(double capacidadCarga) {
-        this.capacidadCarga = capacidadCarga;
     }
 
     @Override
