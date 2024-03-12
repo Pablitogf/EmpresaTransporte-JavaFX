@@ -12,7 +12,7 @@ public class EmpresaApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(EmpresaApplication.class.getResource("Empresa.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
+        stage.setTitle("Empresa De Transporte");
         stage.setScene(scene);
         stage.show();
     }

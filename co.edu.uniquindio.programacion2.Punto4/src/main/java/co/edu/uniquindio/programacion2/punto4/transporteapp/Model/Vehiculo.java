@@ -1,12 +1,12 @@
 package co.edu.uniquindio.programacion2.punto4.transporteapp.Model;
 
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Builder.VehiculoBuilder;
+import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder.VehiculoBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Vehiculo {
-    private Asociado asociadoPrincipal;
+    //private Asociado asociadoPrincipal;
     private String placa;
     private String modelo;
     private String marca;
@@ -16,8 +16,8 @@ public class Vehiculo {
     public Vehiculo() {
     }
 
-    public Vehiculo(Asociado asociadoPrincipal, String placa, String modelo, String marca, String color, ArrayList<Asociado> propietariosAsociadoList) {
-        this.asociadoPrincipal = asociadoPrincipal;
+    public Vehiculo(String placa, String modelo, String marca, String color, ArrayList<Asociado> propietariosAsociadoList) {
+        /*this.asociadoPrincipal = asociadoPrincipal;*/
         this.placa = placa;
         this.modelo = modelo;
         this.marca = marca;
@@ -29,9 +29,9 @@ public class Vehiculo {
         return new VehiculoBuilder();
     }
 
-    public Asociado getAsociadoPrincipal() {
+    /*public Asociado getAsociadoPrincipal() {
         return asociadoPrincipal;
-    }
+    }*/
 
     public String getPlaca() {
         return placa;

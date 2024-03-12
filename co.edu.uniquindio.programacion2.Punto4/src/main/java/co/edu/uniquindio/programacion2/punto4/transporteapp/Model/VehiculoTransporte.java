@@ -10,8 +10,8 @@ public class VehiculoTransporte extends Vehiculo{
     public VehiculoTransporte() {
     }
 
-    public VehiculoTransporte(Asociado asociadoPrincipal, String placa, String modelo, String marca, String color, ArrayList<Asociado> propietariosAsociadoList, int numPasajerosMax, ArrayList<Usuario> listaUsuariosAsociados) {
-        super(asociadoPrincipal, placa, modelo, marca, color, propietariosAsociadoList);
+    public VehiculoTransporte(String placa, String modelo, String marca, String color, ArrayList<Asociado> propietariosAsociadoList, int numPasajerosMax, ArrayList<Usuario> listaUsuariosAsociados) {
+        super(placa, modelo, marca, color, propietariosAsociadoList);
         this.numPasajerosMax = numPasajerosMax;
         this.listaUsuariosAsociados = listaUsuariosAsociados;
     }

@@ -1,4 +1,4 @@
-package co.edu.uniquindio.programacion2.punto4.transporteapp.Builder;
+package co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder;
 
 import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.VehiculoCarga;
 
@@ -16,7 +16,7 @@ public class VehiculoCargaBuilder extends VehiculoBuilder<VehiculoCargaBuilder>{
     }
     @Override
     public VehiculoCarga build(){
-        return new VehiculoCarga(asociadoPrincipal,placa,modelo,marca,color,propietariosAsociadoList,capacidadCarga,numEjes);
+        return new VehiculoCarga(placa,modelo,marca,color,propietariosAsociadoList,capacidadCarga,numEjes);
     }
     @Override
     protected VehiculoCargaBuilder self(){

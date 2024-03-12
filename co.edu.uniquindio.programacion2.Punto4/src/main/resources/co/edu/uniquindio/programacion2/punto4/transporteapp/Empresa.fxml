@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="co.edu.uniquindio.programacion2.punto4.transporteapp.Controller.EmpresaController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="661.0" prefWidth="1063.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.programacion2.punto4.transporteapp.Controller.EmpresaController">
+   <children>
+      <SplitPane dividerPositions="0.8209408194233687" orientation="VERTICAL" prefHeight="661.0" prefWidth="1076.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="1054.0">
+               <children>
+                  <TextField fx:id="txtNombre" layoutX="231.0" layoutY="108.0" />
+                  <Label layoutX="90.0" layoutY="112.0" text="Nombre:" />
+                  <TextField fx:id="txtCedula" layoutX="231.0" layoutY="175.0" />
+                  <Label layoutX="93.0" layoutY="179.0" text="Cedula:" />
+                  <TextField fx:id="txtEmail" layoutX="798.0" layoutY="108.0" />
+                  <Label layoutX="668.0" layoutY="112.0" text="Email:" />
+                  <TextField fx:id="txtCelular" layoutX="231.0" layoutY="257.0" />
+                  <Label layoutX="93.0" layoutY="261.0" text="Celular:" />
+                  <TextField fx:id="txttipoVehiculo" layoutX="798.0" layoutY="175.0" />
+                  <Label layoutX="668.0" layoutY="179.0" text="Tipo de vehiculo:" />
+                  <Separator prefHeight="0.0" prefWidth="1072.0" />
+                  <Label layoutX="503.0" layoutY="25.0" prefHeight="25.0" prefWidth="69.0" text="La Carretera" />
+                  <Separator layoutX="6.0" layoutY="13.0" prefHeight="0.0" prefWidth="1063.0" />
+                  <Separator layoutX="529.0" layoutY="315.0" orientation="VERTICAL" prefHeight="173.0" prefWidth="16.0" />
+                  <RadioButton fx:id="rbVehiculoCarga" layoutX="189.0" layoutY="342.0" mnemonicParsing="false" text="Vehiculo de Carga">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="TipoDevehiculo" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rbVehiculoTransporte1" layoutX="729.0" layoutY="342.0" mnemonicParsing="false" text="Vehiculo de Transporte" toggleGroup="$TipoDevehiculo" />
+                  <TextField fx:id="txtCapacidadCarga" layoutX="248.0" layoutY="457.0" />
+                  <Label layoutX="74.0" layoutY="461.0" text="Capacidad de carga:" />
+                  <TextField fx:id="txtNumEjes" layoutX="248.0" layoutY="398.0" />
+                  <Label layoutX="84.0" layoutY="402.0" text="Numero de ejes:" />
+                  <TextField fx:id="txtNumMaxPasajeros" layoutX="831.0" layoutY="398.0" />
+                  <Label layoutX="618.0" layoutY="402.0" text="Numero maximo de pasajeros:" />
+                  <Separator layoutX="6.0" layoutY="57.0" prefHeight="0.0" prefWidth="1063.0" />
+                  <Separator layoutX="6.0" layoutY="314.0" prefHeight="0.0" prefWidth="1063.0" />
+                  <Button fx:id="btnFinalizar" layoutX="507.0" layoutY="499.0" mnemonicParsing="false" onAction="#onAgregar" text="Finalizar" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        </items>
+      </SplitPane>
+   </children>
 </AnchorPane>

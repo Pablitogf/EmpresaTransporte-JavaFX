@@ -9,8 +9,8 @@ public class VehiculoCarga extends Vehiculo{
     public VehiculoCarga() {
     }
 
-    public VehiculoCarga(Asociado asociadoPrincipal, String placa, String modelo, String marca, String color, ArrayList<Asociado> propietariosAsociadoList, int capacidadCarga, int numEjes) {
-        super(asociadoPrincipal, placa, modelo, marca, color, propietariosAsociadoList);
+    public VehiculoCarga(String placa, String modelo, String marca, String color, ArrayList<Asociado> propietariosAsociadoList, int capacidadCarga, int numEjes) {
+        super(placa, modelo, marca, color, propietariosAsociadoList);
         this.capacidadCarga = capacidadCarga;
         this.numEjes = numEjes;
     }

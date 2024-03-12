@@ -53,39 +53,39 @@ public class EmpresaTransporte {
         this.asociadosList = asociadosList;
     }
 
-    public boolean crearVehiculo(Asociado asociadoPrincipal, String placa, String modelo, String marca, String color){
-        Vehiculo encontrarVehiculo = obtenerVehiculo(placa);
-        if(encontrarVehiculo == null){
-            Vehiculo vehiculo = getBuildVehiculo(asociadoPrincipal, placa, modelo, marca, color);
+    public boolean crearVehiclo(String placa, String modelo, String marca, String color, ArrayList<Asociado> propietariosAsociadoList){
+        Vehiculo vehiculoEncontrado = obtenerVehiculo(placa);
+        if (vehiculoEncontrado == null) {
+            Vehiculo vehiculo = getBuildVehiculo(placa, modelo, marca, color, propietariosAsociadoList);
             getVehiculoList().add(vehiculo);
             return true;
-        }else {
+        }else{
             return false;
         }
 
     }
 
-
-    private Vehiculo getBuildVehiculo(Asociado asociadoPrincipal, String placa, String modelo, String marca, String color) {
+    private Vehiculo getBuildVehiculo(String placa, String modelo, String marca, String color, ArrayList<Asociado> propietariosAsociadoList) {
         return Vehiculo.builder()
-                .asociadoPrincipal(asociadoPrincipal)
                 .placa(placa)
                 .modelo(modelo)
                 .marca(marca)
                 .color(color)
+                .propietariosAsociadoList(propietariosAsociadoList)
                 .build();
     }
 
     private Vehiculo obtenerVehiculo(String placa) {
         Vehiculo vehiculo = null;
-        for(Vehiculo vehiculo1:getVehiculoList()){
-            if (vehiculo1.getPlaca().equalsIgnoreCase(placa)){
-                vehiculo=vehiculo1;
+        for (Vehiculo vehiculo1: getVehiculoList()){
+            if(vehiculo1.getPlaca().equalsIgnoreCase(placa)){
+                vehiculo = vehiculo1;
                 break;
             }
         }
         return vehiculo;
     }
+
 }
 
 

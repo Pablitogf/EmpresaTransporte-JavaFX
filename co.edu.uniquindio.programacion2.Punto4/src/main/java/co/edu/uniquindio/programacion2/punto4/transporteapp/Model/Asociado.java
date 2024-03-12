@@ -9,7 +9,7 @@ public class Asociado {
     private String numIdentificacion;
     private String email;
     private String numCelular;
-    private String tamañoVehiculo;
+    private String TipoVehiculo;
     private List<Vehiculo> vehiculoAsociadoList = new ArrayList<>();
 
     public Asociado() {
@@ -55,12 +55,12 @@ public class Asociado {
         this.numCelular = numCelular;
     }
 
-    public String getTamañoVehiculo() {
-        return tamañoVehiculo;
+    public String getTipoVehiculo() {
+        return TipoVehiculo;
     }
 
-    public void setTamañoVehiculo(String tamañoVehiculo) {
-        this.tamañoVehiculo = tamañoVehiculo;
+    public void setTipoVehiculo(String tipoVehiculo) {
+        this.TipoVehiculo = tipoVehiculo;
     }
 
     public List<Vehiculo> getVehiculoList() {
