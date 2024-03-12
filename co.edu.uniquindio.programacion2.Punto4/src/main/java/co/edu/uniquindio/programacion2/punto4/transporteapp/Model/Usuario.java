@@ -27,7 +27,7 @@ public class Usuario {
         return edad;
     }
 
-    public void setCedula(int edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
 

@@ -1,9 +1,6 @@
 package co.edu.uniquindio.programacion2.punto4.transporteapp.Controller;
 
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
 import co.edu.uniquindio.programacion2.punto4.transporteapp.Factory.ModelFactory;
 import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Asociado;
 import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder.VehiculoCargaBuilder;
@@ -90,8 +87,8 @@ public class EmpresaController {
         Asociado asociado = new Asociado();
 
         asociado.setNombre(txtNombre.getText());
-        asociado.setNumIdentificacion(txtCedula.getText());
-        asociado.setNumCelular(txtCelular.getText());
+        asociado.setCedula(txtCedula.getText());
+        asociado.setCelular(txtCelular.getText());
         asociado.setEmail(txtEmail.getText());
         asociado.setTipoVehiculo(txttipoVehiculo.getText());
 

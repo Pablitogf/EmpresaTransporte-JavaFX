@@ -6,9 +6,9 @@ import java.util.List;
 public class Asociado {
     private Vehiculo vehiculoPrincipal;
     private String nombre;
-    private String numIdentificacion;
+    private String cedula;
     private String email;
-    private String numCelular;
+    private String celular;
     private String TipoVehiculo;
     private List<Vehiculo> vehiculoAsociadoList = new ArrayList<>();
 
@@ -31,12 +31,12 @@ public class Asociado {
         this.nombre = nombre;
     }
 
-    public String getNumIdentificacion() {
-        return numIdentificacion;
+    public String getCedula() {
+        return cedula;
     }
 
-    public void setNumIdentificacion(String numIdentificacion) {
-        this.numIdentificacion = numIdentificacion;
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
     }
 
     public String getEmail() {
@@ -47,12 +47,12 @@ public class Asociado {
         this.email = email;
     }
 
-    public String getNumCelular() {
-        return numCelular;
+    public String getCelular() {
+        return celular;
     }
 
-    public void setNumCelular(String numCelular) {
-        this.numCelular = numCelular;
+    public void setCelular(String celular) {
+        this.celular = celular;
     }
 
     public String getTipoVehiculo() {
@@ -76,9 +76,9 @@ public class Asociado {
         return "Asociado{" +
                 "vehiculoPrincipal=" + vehiculoPrincipal +
                 ", nombre='" + nombre + '\'' +
-                ", numIdentificacion='" + numIdentificacion + '\'' +
+                ", numIdentificacion='" + cedula + '\'' +
                 ", email='" + email + '\'' +
-                ", numCelular='" + numCelular + '\'' +
+                ", numCelular='" + celular + '\'' +
                 ", TipoVehiculo='" + TipoVehiculo + '\'' +
                 ", vehiculoAsociadoList=" + vehiculoAsociadoList +
                 '}';
