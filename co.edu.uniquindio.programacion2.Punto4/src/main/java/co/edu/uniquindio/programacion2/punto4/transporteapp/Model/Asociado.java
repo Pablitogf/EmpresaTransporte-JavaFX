@@ -70,4 +70,17 @@ public class Asociado {
     public void setVehiculoList(List<Vehiculo> vehiculoList) {
         this.vehiculoAsociadoList = vehiculoList;
     }
+
+    @Override
+    public String toString() {
+        return "Asociado{" +
+                "vehiculoPrincipal=" + vehiculoPrincipal +
+                ", nombre='" + nombre + '\'' +
+                ", numIdentificacion='" + numIdentificacion + '\'' +
+                ", email='" + email + '\'' +
+                ", numCelular='" + numCelular + '\'' +
+                ", TipoVehiculo='" + TipoVehiculo + '\'' +
+                ", vehiculoAsociadoList=" + vehiculoAsociadoList +
+                '}';
+    }
 }

@@ -11,7 +11,6 @@ public class VehiculoBuilder<T extends VehiculoBuilder<T>>{
     protected String modelo;
     protected String marca;
     protected String color;
-    protected ArrayList<Asociado> propietariosAsociadoList = new ArrayList<>();
 
     /*public T asociadoPrincipal( Asociado asociadoPrincipal){
         this.asociadoPrincipal=asociadoPrincipal;
@@ -38,18 +37,13 @@ public class VehiculoBuilder<T extends VehiculoBuilder<T>>{
         return self();
     }
 
-    public T propietariosAsociadoList(ArrayList<Asociado> propietariosAsociadoList){
-        this.propietariosAsociadoList = propietariosAsociadoList;
-        return self();
-    }
-
     @SuppressWarnings("unchecked")
     protected T self() {
         return (T) this;
     }
 
     public Vehiculo build(){
-        return new Vehiculo(placa,modelo,marca,color, propietariosAsociadoList);
+        return new Vehiculo(placa,modelo,marca,color);
     }
 
 }

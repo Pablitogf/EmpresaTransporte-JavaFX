@@ -22,7 +22,7 @@ public class ModelFactory {
         return modelFactory;
     }
 
-    public boolean crearVehiclo(String placa, String modelo, String marca, String color, ArrayList<Asociado> propietariosAsociadoList){
-        return empresaTransporte.crearVehiclo(placa,modelo,marca,color,propietariosAsociadoList);
+    public boolean crearVehiclo(String placa, String modelo, String marca, String color){
+        return empresaTransporte.crearVehiclo(placa,modelo,marca,color);
     }
 }

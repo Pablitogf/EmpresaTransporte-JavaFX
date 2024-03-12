@@ -22,7 +22,7 @@ public class VehiculoTransporteBuilder extends VehiculoBuilder<VehiculoTransport
 
     @Override
     public VehiculoTransporte build(){
-        return new VehiculoTransporte(placa,modelo,marca,color,propietariosAsociadoList,numPasajerosMax,listaUsuariosAsociados);
+        return new VehiculoTransporte(placa,modelo,marca,color,numPasajerosMax);
     }
 
     @Override

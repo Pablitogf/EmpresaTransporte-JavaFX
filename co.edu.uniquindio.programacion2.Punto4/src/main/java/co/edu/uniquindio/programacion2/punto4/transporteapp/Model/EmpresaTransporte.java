@@ -53,10 +53,10 @@ public class EmpresaTransporte {
         this.asociadosList = asociadosList;
     }
 
-    public boolean crearVehiclo(String placa, String modelo, String marca, String color, ArrayList<Asociado> propietariosAsociadoList){
+    public boolean crearVehiclo(String placa, String modelo, String marca, String color){
         Vehiculo vehiculoEncontrado = obtenerVehiculo(placa);
         if (vehiculoEncontrado == null) {
-            Vehiculo vehiculo = getBuildVehiculo(placa, modelo, marca, color, propietariosAsociadoList);
+            Vehiculo vehiculo = getBuildVehiculo(placa, modelo, marca, color);
             getVehiculoList().add(vehiculo);
             return true;
         }else{
@@ -65,13 +65,12 @@ public class EmpresaTransporte {
 
     }
 
-    private Vehiculo getBuildVehiculo(String placa, String modelo, String marca, String color, ArrayList<Asociado> propietariosAsociadoList) {
+    private Vehiculo getBuildVehiculo(String placa, String modelo, String marca, String color) {
         return Vehiculo.builder()
                 .placa(placa)
                 .modelo(modelo)
                 .marca(marca)
                 .color(color)
-                .propietariosAsociadoList(propietariosAsociadoList)
                 .build();
     }
 

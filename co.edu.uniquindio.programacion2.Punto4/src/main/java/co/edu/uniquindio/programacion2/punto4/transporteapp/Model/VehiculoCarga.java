@@ -9,8 +9,8 @@ public class VehiculoCarga extends Vehiculo{
     public VehiculoCarga() {
     }
 
-    public VehiculoCarga(String placa, String modelo, String marca, String color, ArrayList<Asociado> propietariosAsociadoList, int capacidadCarga, int numEjes) {
-        super(placa, modelo, marca, color, propietariosAsociadoList);
+    public VehiculoCarga(String placa, String modelo, String marca, String color, int capacidadCarga, int numEjes) {
+        super(placa, modelo, marca, color);
         this.capacidadCarga = capacidadCarga;
         this.numEjes = numEjes;
     }
@@ -21,5 +21,13 @@ public class VehiculoCarga extends Vehiculo{
 
     public void setNumEjes(int numEjes) {
         this.numEjes = numEjes;
+    }
+
+    @Override
+    public String toString() {
+        return "VehiculoCarga{" +
+                "capacidadCarga=" + capacidadCarga +
+                ", numEjes=" + numEjes +
+                '}';
     }
 }

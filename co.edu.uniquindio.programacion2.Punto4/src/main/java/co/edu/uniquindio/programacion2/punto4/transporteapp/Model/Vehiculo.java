@@ -11,18 +11,16 @@ public class Vehiculo {
     private String modelo;
     private String marca;
     private String color;
-    private ArrayList<Asociado> propietariosAsociadoList = new ArrayList<>();
 
     public Vehiculo() {
     }
 
-    public Vehiculo(String placa, String modelo, String marca, String color, ArrayList<Asociado> propietariosAsociadoList) {
+    public Vehiculo(String placa, String modelo, String marca, String color) {
         /*this.asociadoPrincipal = asociadoPrincipal;*/
         this.placa = placa;
         this.modelo = modelo;
         this.marca = marca;
         this.color = color;
-        this.propietariosAsociadoList = propietariosAsociadoList;
     }
 
     public static VehiculoBuilder builder(){
@@ -49,7 +47,13 @@ public class Vehiculo {
         return color;
     }
 
-    public List<Asociado> getPropietariosAsociadoList() {
-        return propietariosAsociadoList;
+    @Override
+    public String toString() {
+        return "Vehiculo{" +
+                "placa='" + placa + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", marca='" + marca + '\'' +
+                ", color='" + color + '\'' +
+                '}';
     }
 }
