@@ -1,9 +1,11 @@
 package co.edu.uniquindio.programacion2.punto4.transporteapp.Model;
 
+import java.util.ArrayList;
+
 public class Usuario {
     private VehiculoTransporte vehiculoTransporte;
     private String nombre;
-    private String cedula;
+    private int edad;
 
     public String getNombre() {
         return nombre;
@@ -21,11 +23,13 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public String getCedula() {
-        return cedula;
+    public int getEdad() {
+        return edad;
     }
 
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
+    public void setCedula(int edad) {
+        this.edad = edad;
     }
+
+
 }

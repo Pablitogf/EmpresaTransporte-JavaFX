@@ -4,7 +4,7 @@ import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Asociado;
 import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.EmpresaTransporte;
 
 public class ModelFactory {
-    private static ModelFactory modelFactory;
+    /*private static ModelFactory modelFactory;
 
     private ModelFactory(){
 
@@ -16,7 +16,7 @@ public class ModelFactory {
         }
         return modelFactory;
     }
-    /*public boolean crearVehiculo(Asociado asociadoPrincipal, String placa, String modelo, String marca, String color) {
+    public boolean crearVehiculo(Asociado asociadoPrincipal, String placa, String modelo, String marca, String color) {
         return EmpresaTransporte.crearVehiculo(asociadoPrincipal,placa,modelo,marca,color);
     }*/
 }
