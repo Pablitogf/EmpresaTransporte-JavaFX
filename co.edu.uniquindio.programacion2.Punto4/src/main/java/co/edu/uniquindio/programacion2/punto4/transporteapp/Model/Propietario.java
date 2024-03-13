@@ -4,13 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Propietario {
-    private Vehiculo vehiculoPrincipal;
     private String nombre;
     private String cedula;
     private String email;
     private String celular;
-    private String TipoVehiculo;
-    private List<Vehiculo> vehiculoAsociadoList = new ArrayList<>();
+    private Vehiculo vehiculoPrincipal;
+    private ArrayList<Vehiculo> listaVehiculosAsociados = new ArrayList<>();
 
     public Propietario() {
     }
@@ -55,20 +54,16 @@ public class Propietario {
         this.celular = celular;
     }
 
-    public String getTipoVehiculo() {
-        return TipoVehiculo;
-    }
-
-    public void setTipoVehiculo(String tipoVehiculo) {
-        this.TipoVehiculo = tipoVehiculo;
-    }
-
     public List<Vehiculo> getVehiculoList() {
-        return vehiculoAsociadoList;
+        return listaVehiculosAsociados;
     }
 
-    public void setVehiculoList(List<Vehiculo> vehiculoList) {
-        this.vehiculoAsociadoList = vehiculoList;
+    public ArrayList<Vehiculo> getListaVehiculosAsociados() {
+        return listaVehiculosAsociados;
+    }
+
+    public void setListaVehiculosAsociados(ArrayList<Vehiculo> listaVehiculosAsociados) {
+        this.listaVehiculosAsociados = listaVehiculosAsociados;
     }
 
     @Override
@@ -79,8 +74,7 @@ public class Propietario {
                 ", numIdentificacion='" + cedula + '\'' +
                 ", email='" + email + '\'' +
                 ", numCelular='" + celular + '\'' +
-                ", TipoVehiculo='" + TipoVehiculo + '\'' +
-                ", vehiculoAsociadoList=" + vehiculoAsociadoList +
+                ", vehiculoAsociadoList=" + listaVehiculosAsociados +
                 '}';
     }
 }

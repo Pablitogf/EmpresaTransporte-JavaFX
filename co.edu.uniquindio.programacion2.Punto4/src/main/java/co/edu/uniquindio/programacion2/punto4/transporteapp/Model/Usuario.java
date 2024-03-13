@@ -1,22 +1,22 @@
 package co.edu.uniquindio.programacion2.punto4.transporteapp.Model;
 
-import java.util.ArrayList;
-
 public class Usuario {
-    private VehiculoTransporte vehiculoTransporte;
     private String nombre;
     private int edad;
 
+    private VehiculoTransporte vehiculoAsociado;
+
+    public Usuario() {
+    }
+
+    public Usuario(String nombre, int edad, VehiculoTransporte vehiculoAsociado) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.vehiculoAsociado = vehiculoAsociado;
+    }
+
     public String getNombre() {
         return nombre;
-    }
-
-    public VehiculoTransporte getVehiculoTransporte() {
-        return vehiculoTransporte;
-    }
-
-    public void setVehiculoTransporte(VehiculoTransporte vehiculoTransporte) {
-        this.vehiculoTransporte = vehiculoTransporte;
     }
 
     public void setNombre(String nombre) {
@@ -31,5 +31,11 @@ public class Usuario {
         this.edad = edad;
     }
 
+    public VehiculoTransporte getVehiculoAsociado() {
+        return vehiculoAsociado;
+    }
 
+    public void setVehiculoAsociado(VehiculoTransporte vehiculoAsociado) {
+        this.vehiculoAsociado = vehiculoAsociado;
+    }
 }

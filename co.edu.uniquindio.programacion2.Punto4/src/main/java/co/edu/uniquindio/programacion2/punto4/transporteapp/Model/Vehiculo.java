@@ -6,30 +6,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Vehiculo {
-    //private Asociado asociadoPrincipal;
     private String placa;
     private String modelo;
     private String marca;
     private String color;
+    private Propietario propietarioAsociado;
+    private ArrayList<Propietario> listaPropietariosAsociados = new ArrayList<>();
 
     public Vehiculo() {
     }
 
-    public Vehiculo(String placa, String modelo, String marca, String color) {
-        /*this.asociadoPrincipal = asociadoPrincipal;*/
+    public Vehiculo(String placa, String modelo, String marca, String color, Propietario propietarioAsociado, ArrayList<Propietario> listaPropietariosAsociados) {
         this.placa = placa;
         this.modelo = modelo;
         this.marca = marca;
         this.color = color;
+        this.propietarioAsociado = propietarioAsociado;
+        this.listaPropietariosAsociados = listaPropietariosAsociados;
     }
 
     public static VehiculoBuilder builder(){
         return new VehiculoBuilder();
     }
-
-    /*public Asociado getAsociadoPrincipal() {
-        return asociadoPrincipal;
-    }*/
 
     public String getPlaca() {
         return placa;
@@ -47,6 +45,14 @@ public class Vehiculo {
         return color;
     }
 
+    public Propietario getPropietarioAsociado() {
+        return propietarioAsociado;
+    }
+
+    public ArrayList<Propietario> getListaPropietariosAsociados() {
+        return listaPropietariosAsociados;
+    }
+
     @Override
     public String toString() {
         return "Vehiculo{" +
@@ -54,6 +60,8 @@ public class Vehiculo {
                 ", modelo='" + modelo + '\'' +
                 ", marca='" + marca + '\'' +
                 ", color='" + color + '\'' +
+                ", propietarioAsociado=" + propietarioAsociado +
+                ", listaPropietariosAsociados=" + listaPropietariosAsociados +
                 '}';
     }
 }

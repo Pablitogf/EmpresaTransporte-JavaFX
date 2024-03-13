@@ -3,20 +3,20 @@ package co.edu.uniquindio.programacion2.punto4.transporteapp.Model;
 import java.util.ArrayList;
 
 public class VehiculoTransporte extends Vehiculo{
-    private int numPasajerosMax;
+    private int maxNumPasajeros;
     private ArrayList<Usuario> listaUsuariosAsociados = new ArrayList<>();
 
-    public VehiculoTransporte(String placa, String modelo, String marca, String color, int numPasajerosMax) {
+    public VehiculoTransporte() {
     }
 
-    public VehiculoTransporte(String placa, String modelo, String marca, String color, int numPasajerosMax, ArrayList<Usuario> listaUsuariosAsociados) {
-        super(placa, modelo, marca, color);
-        this.numPasajerosMax = numPasajerosMax;
+    public VehiculoTransporte(String placa, String modelo, String marca, String color, Propietario propietarioAsociado, ArrayList<Propietario> listaPropietariosAsociados, int maxNumPasajeros, ArrayList<Usuario> listaUsuariosAsociados) {
+        super(placa, modelo, marca, color, propietarioAsociado, listaPropietariosAsociados);
+        this.maxNumPasajeros = maxNumPasajeros;
         this.listaUsuariosAsociados = listaUsuariosAsociados;
     }
 
-    public int getNumPasajerosMax() {
-        return numPasajerosMax;
+    public int getMaxNumPasajeros() {
+        return maxNumPasajeros;
     }
 
     public ArrayList<Usuario> getListaUsuariosAsociados() {
@@ -26,7 +26,7 @@ public class VehiculoTransporte extends Vehiculo{
     @Override
     public String toString() {
         return "VehiculoTransporte{" +
-                "numPasajerosMax=" + numPasajerosMax +
+                "maxNumPasajeros=" + maxNumPasajeros +
                 ", listaUsuariosAsociados=" + listaUsuariosAsociados +
                 '}';
     }

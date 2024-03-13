@@ -3,24 +3,24 @@ package co.edu.uniquindio.programacion2.punto4.transporteapp.Model;
 import java.util.ArrayList;
 
 public class VehiculoCarga extends Vehiculo{
-    private int capacidadCarga;
+    private double capacidadCarga;
     private int numEjes;
 
     public VehiculoCarga() {
     }
 
-    public VehiculoCarga(String placa, String modelo, String marca, String color, int capacidadCarga, int numEjes) {
-        super(placa, modelo, marca, color);
+    public VehiculoCarga(String placa, String modelo, String marca, String color, Propietario propietarioAsociado, ArrayList<Propietario> listaPropietariosAsociados, double capacidadCarga, int numEjes) {
+        super(placa, modelo, marca, color, propietarioAsociado, listaPropietariosAsociados);
         this.capacidadCarga = capacidadCarga;
         this.numEjes = numEjes;
     }
 
-    public void setCapacidadCarga(int capacidadCarga) {
-        this.capacidadCarga = capacidadCarga;
+    public double getCapacidadCarga() {
+        return capacidadCarga;
     }
 
-    public void setNumEjes(int numEjes) {
-        this.numEjes = numEjes;
+    public int getNumEjes() {
+        return numEjes;
     }
 
     @Override

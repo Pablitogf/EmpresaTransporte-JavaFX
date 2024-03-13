@@ -18,7 +18,6 @@ public class Main {
         propietario.setCedula("456454");
         propietario.setCelular("12346");
         propietario.setEmail("vectortugaticanocturna@gmail.com");
-        propietario.setTipoVehiculo("Carga");
 
         Usuario usuario = new Usuario();
         usuario.setNombre("pedro");
