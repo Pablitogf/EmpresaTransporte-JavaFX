@@ -10,15 +10,25 @@ public class EmpresaTransporte {
     private List<VehiculoCarga> vehiculoCargaList = new ArrayList<>();
     private List<Vehiculo> vehiculoList = new ArrayList<>();
 
+    private List<Usuario> listaUsuarios = new ArrayList<>();
+
     public EmpresaTransporte() {
     }
 
-    public List<Vehiculo> getVehiculoList() {
-        return vehiculoList;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setVehiculoList(List<Vehiculo> vehiculoList) {
-        this.vehiculoList = vehiculoList;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public List<Propietario> getPropietarioList() {
+        return propietarioList;
+    }
+
+    public void setPropietarioList(List<Propietario> propietarioList) {
+        this.propietarioList = propietarioList;
     }
 
     public List<VehiculoTransporte> getVehiculoTransporteList() {
@@ -37,20 +47,20 @@ public class EmpresaTransporte {
         this.vehiculoCargaList = vehiculoCargaList;
     }
 
-    public String getNombre() {
-        return nombre;
+    public List<Vehiculo> getVehiculoList() {
+        return vehiculoList;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setVehiculoList(List<Vehiculo> vehiculoList) {
+        this.vehiculoList = vehiculoList;
     }
 
-    public List<Propietario> getPropietarioList() {
-        return propietarioList;
+    public List<Usuario> getListaUsuarios() {
+        return listaUsuarios;
     }
 
-    public void setPropietarioList(List<Propietario> propietarioList) {
-        this.propietarioList = propietarioList;
+    public void setListaUsuarios(List<Usuario> listaUsuarios) {
+        this.listaUsuarios = listaUsuarios;
     }
 
     public boolean crearVehiclo(String placa, String modelo, String marca, String color){
@@ -83,6 +93,16 @@ public class EmpresaTransporte {
             }
         }
         return vehiculo;
+    }
+
+    public int calcularNumPasajeros(String placa){
+        int suma = 0;
+        for (VehiculoTransporte vehiculoTransporte :this.vehiculoTransporteList){
+            if(vehiculoTransporte.getPlaca().equals(placa)){
+                suma += vehiculoTransporte.getListaUsuariosAsociados().size();
+            }
+        }
+        return suma;
     }
 
 }

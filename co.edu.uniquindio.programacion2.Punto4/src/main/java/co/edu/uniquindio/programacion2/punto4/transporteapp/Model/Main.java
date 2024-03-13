@@ -14,17 +14,17 @@ public class Main {
 
         Propietario propietario = new Propietario();
 
-        propietario.setNombre("Vector");
+        propietario.setNombrePropietario("Vector");
         propietario.setCedula("456454");
         propietario.setCelular("12346");
         propietario.setEmail("vectortugaticanocturna@gmail.com");
 
         Usuario usuario = new Usuario();
-        usuario.setNombre("pedro");
+        usuario.setNombreUsuario("pedro");
         usuario.setEdad(17);
 
         Usuario usuario1 = new Usuario();
-        usuario1.setNombre("Samuel");
+        usuario1.setNombreUsuario("Samuel");
         usuario1.setEdad(25);
 
         ArrayList<Usuario> listaUsuario = new ArrayList<>();

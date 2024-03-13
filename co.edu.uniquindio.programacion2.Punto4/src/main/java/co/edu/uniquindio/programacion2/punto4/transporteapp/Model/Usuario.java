@@ -1,7 +1,7 @@
 package co.edu.uniquindio.programacion2.punto4.transporteapp.Model;
 
 public class Usuario {
-    private String nombre;
+    private String nombreUsuario;
     private int edad;
 
     private VehiculoTransporte vehiculoAsociado;
@@ -9,18 +9,18 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(String nombre, int edad, VehiculoTransporte vehiculoAsociado) {
-        this.nombre = nombre;
+    public Usuario(String nombreUsuario, int edad, VehiculoTransporte vehiculoAsociado) {
+        this.nombreUsuario = nombreUsuario;
         this.edad = edad;
         this.vehiculoAsociado = vehiculoAsociado;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreUsuario() {
+        return nombreUsuario;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreUsuario(String nombreUsuario) {
+        this.nombreUsuario = nombreUsuario;
     }
 
     public int getEdad() {

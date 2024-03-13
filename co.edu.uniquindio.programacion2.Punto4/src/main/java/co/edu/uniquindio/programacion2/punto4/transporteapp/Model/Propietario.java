@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Propietario {
-    private String nombre;
+    private String nombrePropietario;
     private String cedula;
     private String email;
     private String celular;
@@ -22,12 +22,12 @@ public class Propietario {
         this.vehiculoPrincipal = vehiculoPrincipal;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombrePropietario() {
+        return nombrePropietario;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombrePropietario(String nombrePropietario) {
+        this.nombrePropietario = nombrePropietario;
     }
 
     public String getCedula() {
@@ -70,7 +70,7 @@ public class Propietario {
     public String toString() {
         return "Asociado{" +
                 "vehiculoPrincipal=" + vehiculoPrincipal +
-                ", nombre='" + nombre + '\'' +
+                ", nombre='" + nombrePropietario + '\'' +
                 ", numIdentificacion='" + cedula + '\'' +
                 ", email='" + email + '\'' +
                 ", numCelular='" + celular + '\'' +
