@@ -83,7 +83,6 @@ public class EmpresaController {
         propietario.setCedula(txtCedula.getText());
         propietario.setCelular(txtCelular.getText());
         propietario.setEmail(txtEmail.getText());
-        propietario.setTipoVehiculo(txttipoVehiculo.getText());
 
         String Mensaje = propietario.toString();
 
