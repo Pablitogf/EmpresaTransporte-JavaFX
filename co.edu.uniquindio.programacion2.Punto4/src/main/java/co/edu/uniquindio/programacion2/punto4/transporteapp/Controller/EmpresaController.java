@@ -2,7 +2,7 @@ package co.edu.uniquindio.programacion2.punto4.transporteapp.Controller;
 
 
 import co.edu.uniquindio.programacion2.punto4.transporteapp.Factory.ModelFactory;
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Asociado;
+import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Propietario;
 import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder.VehiculoCargaBuilder;
 import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder.VehiculoTransporteBuilder;
 import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Vehiculo;
@@ -77,22 +77,15 @@ public class EmpresaController {
 
     private void agregarNuevoAsociado() {
 
-        /*Toggle selectedToggle = TipoDevehiculo.getSelectedToggle();
-        RadioButton selectedRadioButton = (RadioButton) selectedToggle;
-        if (selectedToggle != null) {
-            RadioButton selectedRadioButton = (RadioButton) selectedToggle;
-            System.out.println("Botón de radio seleccionado: " + selectedRadioButton.getText());
-        } else {}*/
+        Propietario propietario = new Propietario();
 
-        Asociado asociado = new Asociado();
+        propietario.setNombre(txtNombre.getText());
+        propietario.setCedula(txtCedula.getText());
+        propietario.setCelular(txtCelular.getText());
+        propietario.setEmail(txtEmail.getText());
+        propietario.setTipoVehiculo(txttipoVehiculo.getText());
 
-        asociado.setNombre(txtNombre.getText());
-        asociado.setCedula(txtCedula.getText());
-        asociado.setCelular(txtCelular.getText());
-        asociado.setEmail(txtEmail.getText());
-        asociado.setTipoVehiculo(txttipoVehiculo.getText());
-
-        String Mensaje = asociado.toString();
+        String Mensaje = propietario.toString();
 
         RadioButton selectedRadioButton = (RadioButton) TipoDevehiculo.getSelectedToggle();
         System.out.println(selectedRadioButton==rbVehiculoCarga);

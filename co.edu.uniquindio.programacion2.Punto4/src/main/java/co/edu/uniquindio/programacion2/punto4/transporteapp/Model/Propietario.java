@@ -3,7 +3,7 @@ package co.edu.uniquindio.programacion2.punto4.transporteapp.Model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Asociado {
+public class Propietario {
     private Vehiculo vehiculoPrincipal;
     private String nombre;
     private String cedula;
@@ -12,7 +12,7 @@ public class Asociado {
     private String TipoVehiculo;
     private List<Vehiculo> vehiculoAsociadoList = new ArrayList<>();
 
-    public Asociado() {
+    public Propietario() {
     }
 
     public Vehiculo getVehiculoPrincipal() {

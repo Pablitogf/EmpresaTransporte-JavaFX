@@ -1,9 +1,6 @@
 package co.edu.uniquindio.programacion2.punto4.transporteapp.Factory;
 
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Asociado;
 import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.EmpresaTransporte;
-
-import java.util.ArrayList;
 
 public class ModelFactory {
 

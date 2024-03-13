@@ -5,7 +5,7 @@ import java.util.List;
 
 public class EmpresaTransporte {
     private String nombre;
-    private List<Asociado> asociadosList = new ArrayList<>();
+    private List<Propietario> propietarioList = new ArrayList<>();
     private List<VehiculoTransporte> vehiculoTransporteList = new ArrayList<>();
     private List<VehiculoCarga> vehiculoCargaList = new ArrayList<>();
     private List<Vehiculo> vehiculoList = new ArrayList<>();
@@ -45,12 +45,12 @@ public class EmpresaTransporte {
         this.nombre = nombre;
     }
 
-    public List<Asociado> getAsociadosList() {
-        return asociadosList;
+    public List<Propietario> getPropietarioList() {
+        return propietarioList;
     }
 
-    public void setAsociadosList(List<Asociado> asociadosList) {
-        this.asociadosList = asociadosList;
+    public void setPropietarioList(List<Propietario> propietarioList) {
+        this.propietarioList = propietarioList;
     }
 
     public boolean crearVehiclo(String placa, String modelo, String marca, String color){

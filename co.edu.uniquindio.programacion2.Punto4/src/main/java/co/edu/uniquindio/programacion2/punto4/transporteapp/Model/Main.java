@@ -1,7 +1,5 @@
 package co.edu.uniquindio.programacion2.punto4.transporteapp.Model;
 
-import co.edu.uniquindio.programacion2.punto4.transporteapp.EmpresaApplication;
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder.VehiculoBuilder;
 import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder.VehiculoTransporteBuilder;
 
 import java.util.ArrayList;
@@ -14,13 +12,13 @@ public class Main {
 
     private static void puntoA() {
 
-        Asociado asociado = new Asociado();
+        Propietario propietario = new Propietario();
 
-        asociado.setNombre("Vector");
-        asociado.setCedula("456454");
-        asociado.setCelular("12346");
-        asociado.setEmail("vectortugaticanocturna@gmail.com");
-        asociado.setTipoVehiculo("Carga");
+        propietario.setNombre("Vector");
+        propietario.setCedula("456454");
+        propietario.setCelular("12346");
+        propietario.setEmail("vectortugaticanocturna@gmail.com");
+        propietario.setTipoVehiculo("Carga");
 
         Usuario usuario = new Usuario();
         usuario.setNombre("pedro");
@@ -42,7 +40,7 @@ public class Main {
                 .numPasajerosMax(35)
                 .listaUsuariosAsociados(listaUsuario)
                 .build();
-        asociado.getVehiculoList().add(vehiculoTransporte);
+        propietario.getVehiculoList().add(vehiculoTransporte);
 
         EmpresaTransporte empresaTransporte = new EmpresaTransporte();
         empresaTransporte.getVehiculoTransporteList().add(vehiculoTransporte);

@@ -1,9 +1,6 @@
 package co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder;
 
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Asociado;
 import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Vehiculo;
-
-import java.util.ArrayList;
 
 public class VehiculoBuilder<T extends VehiculoBuilder<T>>{
     //protected Asociado asociadoPrincipal;
