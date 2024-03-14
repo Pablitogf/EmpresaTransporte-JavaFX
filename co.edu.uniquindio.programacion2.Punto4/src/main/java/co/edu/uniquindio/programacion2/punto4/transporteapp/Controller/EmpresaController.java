@@ -35,6 +35,9 @@ public class EmpresaController {
     private Button btnGuardarVehiculoTransporte;
 
     @FXML
+    private Button btnObtenerMayoresEdad;
+
+    @FXML
     private TextField txtCapacidadCarga;
 
     @FXML
@@ -122,6 +125,11 @@ public class EmpresaController {
         agregarVehiculoTransporte();
     }
 
+    @FXML
+    void onObtenerMayoresEdad(ActionEvent event) {
+        mayoresDeEdad();
+    }
+
     private void agregarNuevoPropietario() {
         Propietario propietario = new Propietario();
 
@@ -170,6 +178,11 @@ public class EmpresaController {
         }else{
             txtResultadosVehiculoTrasporte.setText("No hay usuarios Asignados");
         }
+    }
+
+    private void mayoresDeEdad(){
+        String resultadoEdad = String.valueOf(modelFactory.calcularMayoresEdad());
+        txtResultadoUsuario.setText("Usuarios mayores de edad: " + resultadoEdad);
     }
 
     @FXML

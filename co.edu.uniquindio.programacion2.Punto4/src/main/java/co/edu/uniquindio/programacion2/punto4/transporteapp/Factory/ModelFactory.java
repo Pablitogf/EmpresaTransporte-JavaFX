@@ -7,6 +7,7 @@ import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Usuario;
 import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.VehiculoTransporte;
 
 import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicReferenceArray;
 
 public class ModelFactory {
 
@@ -43,9 +44,17 @@ public class ModelFactory {
         usuario1.setNombreUsuario("Samuel");
         usuario1.setEdad(25);
 
+        Usuario usuario2 = new Usuario();
+        usuario2.setNombreUsuario("Jean Pier");
+        usuario2.setEdad(20);
+
         ArrayList<Usuario> listaUsuario = new ArrayList<>();
         listaUsuario.add(usuario);
         listaUsuario.add(usuario1);
+
+        empresaTransporte.getListaUsuarios().add(usuario);
+        empresaTransporte.getListaUsuarios().add(usuario1);
+        empresaTransporte.getListaUsuarios().add(usuario2);
 
         VehiculoTransporte vehiculoTransporte = new VehiculoTransporteBuilder()
                 .placa("YMA 874")
@@ -65,5 +74,9 @@ public class ModelFactory {
 
     public int calcularNumPasajeros(String placa){
         return empresaTransporte.calcularNumPasajeros(placa);
+    }
+
+    public int calcularMayoresEdad(){
+        return empresaTransporte.calcularMayoresEdad();
     }
 }

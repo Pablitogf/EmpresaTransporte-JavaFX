@@ -9,7 +9,6 @@ public class EmpresaTransporte {
     private List<VehiculoTransporte> vehiculoTransporteList = new ArrayList<>();
     private List<VehiculoCarga> vehiculoCargaList = new ArrayList<>();
     private List<Vehiculo> vehiculoList = new ArrayList<>();
-
     private List<Usuario> listaUsuarios = new ArrayList<>();
 
     public EmpresaTransporte() {
@@ -103,6 +102,16 @@ public class EmpresaTransporte {
             }
         }
         return suma;
+    }
+
+    public int calcularMayoresEdad(){
+        int contador = 0;
+        for (Usuario usuario :this.listaUsuarios){
+            if (usuario.getEdad() >= 18){
+                contador++;
+            }
+        }
+        return contador;
     }
 
 }
