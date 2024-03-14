@@ -38,4 +38,12 @@ public class Usuario {
     public void setVehiculoAsociado(VehiculoTransporte vehiculoAsociado) {
         this.vehiculoAsociado = vehiculoAsociado;
     }
+
+    @Override
+    public String toString() {
+        return "Usuario: " +
+                "nombreUsuario = " + nombreUsuario +
+                ", edad = " + edad +
+                ", vehiculoAsociado = " + vehiculoAsociado;
+    }
 }

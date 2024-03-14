@@ -25,9 +25,8 @@ public class VehiculoTransporte extends Vehiculo{
 
     @Override
     public String toString() {
-        return "VehiculoTransporte{" +
-                "maxNumPasajeros=" + maxNumPasajeros +
-                ", listaUsuariosAsociados=" + listaUsuariosAsociados +
-                '}';
+        return super.toString() + '\n' + "VehiculoTransporte: " +
+                "maxNumPasajeros = " + maxNumPasajeros +
+                ", listaUsuariosAsociados = " + listaUsuariosAsociados;
     }
 }

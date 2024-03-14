@@ -129,7 +129,7 @@ public class EmpresaController {
         propietario.setCedula(txtCedulaPropietario.getText());
         propietario.setCelular(txtCelularPropietario.getText());
         propietario.setEmail(txtEmailPropietario.getText());
-        txtResultadoPropietario.getText().toString();
+        txtResultadoPropietario.setText(propietario.toString());
     }
 
     private void agregarUsuario(){
@@ -137,7 +137,7 @@ public class EmpresaController {
 
         usuario.setNombreUsuario(txtNombreUsuario.getText());
         usuario.setEdad(Integer.parseInt(txtEdadUsuario.getText()));
-        txtResultadoUsuario.getText().toString();
+        txtResultadoUsuario.setText(usuario.toString());
     }
 
     private void agregarVehiculoCarga(){
@@ -149,7 +149,7 @@ public class EmpresaController {
                 .capacidadCarga(Double.parseDouble(txtCapacidadCarga.getText()))
                 .numEjes(Integer.parseInt(txtNumEjes.getText()))
                 .build();
-        txtResultadoVehiculoCarga.getText().toString();
+        txtResultadoVehiculoCarga.setText(vehiculoCarga.toString());
     }
 
     private void agregarVehiculoTransporte(){
@@ -160,7 +160,7 @@ public class EmpresaController {
                 .color(txtColorVehiculoTransporte.getText())
                 .numPasajerosMax(Integer.parseInt(txtMaxNumPasajeros.getText()))
                 .build();
-        txtResultadosVehiculoTrasporte.getText().toString();
+        txtResultadosVehiculoTrasporte.setText(vehiculoTransporte.toString());
     }
 
     private void calcularNumPasajeros(){

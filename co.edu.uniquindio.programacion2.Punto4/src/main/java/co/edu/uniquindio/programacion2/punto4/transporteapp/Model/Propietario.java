@@ -68,13 +68,12 @@ public class Propietario {
 
     @Override
     public String toString() {
-        return "Asociado{" +
-                "vehiculoPrincipal=" + vehiculoPrincipal +
-                ", nombre='" + nombrePropietario + '\'' +
-                ", numIdentificacion='" + cedula + '\'' +
-                ", email='" + email + '\'' +
-                ", numCelular='" + celular + '\'' +
-                ", vehiculoAsociadoList=" + listaVehiculosAsociados +
-                '}';
+        return "Asociado: " +
+                "vehiculoPrincipal = " + vehiculoPrincipal +
+                ", nombre = " + nombrePropietario +
+                ", numIdentificacion = " + cedula +
+                ", email = " + email +
+                ", numCelular = '" + celular +
+                ", vehiculoAsociadoList = " + listaVehiculosAsociados;
     }
 }
