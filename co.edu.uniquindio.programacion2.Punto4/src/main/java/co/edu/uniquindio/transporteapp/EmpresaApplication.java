@@ -1,4 +1,4 @@
-package co.edu.uniquindio.programacion2.punto4.transporteapp;
+package co.edu.uniquindio.transporteapp;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -1,13 +1,12 @@
-package co.edu.uniquindio.programacion2.punto4.transporteapp.Factory;
+package co.edu.uniquindio.transporteapp.Factory;
 
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder.VehiculoTransporteBuilder;
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.EmpresaTransporte;
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Propietario;
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Usuario;
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.VehiculoTransporte;
+import co.edu.uniquindio.transporteapp.Model.Builder.VehiculoTransporteBuilder;
+import co.edu.uniquindio.transporteapp.Model.EmpresaTransporte;
+import co.edu.uniquindio.transporteapp.Model.Propietario;
+import co.edu.uniquindio.transporteapp.Model.Usuario;
+import co.edu.uniquindio.transporteapp.Model.VehiculoTransporte;
 
 import java.util.ArrayList;
-import java.util.concurrent.atomic.AtomicReferenceArray;
 
 public class ModelFactory {
 

@@ -1,4 +1,4 @@
-package co.edu.uniquindio.programacion2.punto4.transporteapp.Model;
+package co.edu.uniquindio.transporteapp.Model;
 
 import java.util.ArrayList;
 

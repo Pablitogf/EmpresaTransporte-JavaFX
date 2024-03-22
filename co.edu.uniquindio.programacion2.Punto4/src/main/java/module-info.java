@@ -3,9 +3,9 @@ module co.edu.uniquindio.programacion2.punto4.transporteapp {
     requires javafx.fxml;
 
 
-    opens co.edu.uniquindio.programacion2.punto4.transporteapp to javafx.fxml;
-    exports co.edu.uniquindio.programacion2.punto4.transporteapp;
+    opens co.edu.uniquindio.transporteapp to javafx.fxml;
+    exports co.edu.uniquindio.transporteapp;
 
-    exports co.edu.uniquindio.programacion2.punto4.transporteapp.Controller;
-    opens co.edu.uniquindio.programacion2.punto4.transporteapp.Controller;
+    exports co.edu.uniquindio.transporteapp.Controller;
+    opens co.edu.uniquindio.transporteapp.Controller;
 }

@@ -1,7 +1,7 @@
-package co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder;
+package co.edu.uniquindio.transporteapp.Model.Builder;
 
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Propietario;
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Vehiculo;
+import co.edu.uniquindio.transporteapp.Model.Propietario;
+import co.edu.uniquindio.transporteapp.Model.Vehiculo;
 
 import java.util.ArrayList;
 

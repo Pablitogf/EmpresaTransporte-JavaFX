@@ -1,9 +1,8 @@
-package co.edu.uniquindio.programacion2.punto4.transporteapp.Model;
+package co.edu.uniquindio.transporteapp.Model;
 
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder.VehiculoBuilder;
+import co.edu.uniquindio.transporteapp.Model.Builder.VehiculoBuilder;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Vehiculo {
     private String placa;

@@ -1,17 +1,16 @@
-package co.edu.uniquindio.programacion2.punto4.transporteapp.Controller;
+package co.edu.uniquindio.transporteapp.Controller;
 
 
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Factory.ModelFactory;
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder.VehiculoCargaBuilder;
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder.VehiculoTransporteBuilder;
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Propietario;
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Usuario;
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.VehiculoCarga;
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.VehiculoTransporte;
+import co.edu.uniquindio.transporteapp.Factory.ModelFactory;
+import co.edu.uniquindio.transporteapp.Model.Builder.VehiculoCargaBuilder;
+import co.edu.uniquindio.transporteapp.Model.Builder.VehiculoTransporteBuilder;
+import co.edu.uniquindio.transporteapp.Model.Propietario;
+import co.edu.uniquindio.transporteapp.Model.Usuario;
+import co.edu.uniquindio.transporteapp.Model.VehiculoCarga;
+import co.edu.uniquindio.transporteapp.Model.VehiculoTransporte;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 

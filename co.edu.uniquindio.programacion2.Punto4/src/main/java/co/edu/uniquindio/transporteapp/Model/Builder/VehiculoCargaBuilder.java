@@ -1,6 +1,6 @@
-package co.edu.uniquindio.programacion2.punto4.transporteapp.Model.Builder;
+package co.edu.uniquindio.transporteapp.Model.Builder;
 
-import co.edu.uniquindio.programacion2.punto4.transporteapp.Model.VehiculoCarga;
+import co.edu.uniquindio.transporteapp.Model.VehiculoCarga;
 
 public class VehiculoCargaBuilder extends VehiculoBuilder<VehiculoCargaBuilder>{
     protected double capacidadCarga;
