@@ -6,6 +6,6 @@ module co.edu.uniquindio.programacion2.punto4.transporteapp {
     opens co.edu.uniquindio.transporteapp to javafx.fxml;
     exports co.edu.uniquindio.transporteapp;
 
-    exports co.edu.uniquindio.transporteapp.Controller;
-    opens co.edu.uniquindio.transporteapp.Controller;
+    exports co.edu.uniquindio.transporteapp.ViewController;
+    opens co.edu.uniquindio.transporteapp.ViewController;
 }
